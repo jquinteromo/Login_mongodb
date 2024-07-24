@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="output.css">
+    <script src="/axios_api.js"></script>
+</head>
+
+<body class="m-0 p-0">
+
+    <div class="relative w-screen h-screen bg-cover bg-center"
+        style="background-image: url('/imgs_background/image.png');">
+
+        <div class="absolute inset-0 bg-black/30 backdrop-blur-md"></div>
+
+        <!-- Contenido encima del fondo -->
+        <div class="relative z-10 p-4 flex h-screen">
+            <img class="absolute   h-15 w-20 " src="/icons/icon_airplane.png">
+            <div class="text-gray-800 h-3/4 w-6/12 shadow-lg rounded-2xl 
+                  mx-auto my-auto max-sm:w-96 bg-gray-100 bg-opacity-15 shadow-neutral-600">
+
+                <form action="/datosform" method="post">
+                    <div class="mx-28 h-full">
+                        <div class="my-5">
+                            <h1 class="text-white border-b-2 border-sky-700 w-20 py-2">Sign in</h1>
+                            <p class="mt-1 text-xs text-gray-800">Ingresa tu correo y tu contraseña en los campos<br>
+                                correspondientes para ingresar al sitio web</p>
+                        </div>
+
+                        <div class="flex flex-col gap-5">
+
+                            <div class="relative mt-7 flex flex-col ">
+                                <input name="email_verifiqued"
+                                    class="pl-7 mb-6 pb-2 w-96 h-6 text-sm border-b-2 border-zinc-400  bg-transparent focus:outline-none"
+                                    type="email" placeholder="Enter you email">
+
+                                <div class="absolute  left-0 flex items-center">
+                                    <img class="pb-2     h-7 w-6 " src="/icons/icon_email.png">
+                                </div>
+
+                                <input name="password_verifiqued" class="relative pl-7 mb-6 pb-2 text-sm w-96 h-6 border-b-2 border-zinc-400 bg-transparent
+                                focus:outline-none" type="password" placeholder="Enter you password">
+
+                                <div class="mt-4 absolute inset-y-0 left-0 flex items-center">
+                                    <img class="h-7 w-6 " src="/icons/icon_password.png">
+                                </div>
+
+                            </div>
+
+
+                            <div class="flex flex-row items-center gap-1">
+                                <input type="checkbox" id="miCheckbox" class=" w-medium border bg-black">
+                                <p class="text-gray-800 w-96 text-xs">Mantenme registrado</p>
+                                <div class="flex justify-end w-full mr-4">
+                                    <button type="submit"
+                                        class="bg-sky-500 text-white text-xs py-1 px-7 rounded-sm">Ingresar</button>
+                                </div>
+                            </div>
+
+                            <div class="flex flex-row ">
+                                <img class="absolute left-[28rem] mt-[0.18rem] h-6 w-6" src="/icons/icon_gogle.png">
+                                <button
+                                    class="text-white pl-7 w-64 h-7  text-xs rounded-sm bg-gray-300 bg-opacity-35">Ingresar
+                                    con
+                                    Google</button>
+
+                                <div class="flex w-full justify-end mr-4">
+                                    <img class="absolute right-[36.6rem] mt-[0.35rem]  h-5 w-5"
+                                        src="/icons/faceboock_icon.png">
+                                    <button
+                                        class=" text-white pl-7 w-40 h-7 bg-gray-300 bg-opacity-35 text-xs rounded-sm">ingresar
+                                        con
+                                        faceboock</button>
+                                </div>
+                            </div>
+
+                            <div class="flex justify-center">
+                                <a href="javascript:void(0);" class="text-xs underline text-gray-800"
+                                    onclick="redirigirRegistro()">Registrarse</a>
+                            </div>
+                        </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
